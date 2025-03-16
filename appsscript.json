@@ -1,0 +1,26 @@
+{
+    "timeZone": "Asia/Kathmandu",
+    "dependencies": {},
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/calendar.addons.execute",
+      "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+      "https://www.googleapis.com/auth/script.container.ui"
+    ],
+    "addOns": {
+      "common": {
+        "name": "Nepali Calendar",
+        "logoUrl": "https://i.imgur.com/7ZrXYAg.png",
+        "homepageTrigger": {
+          "runFunction": "onHomepage"
+        }
+      },
+      "calendar": {
+        "currentEventAccess": "READ",
+        "eventUpdateTrigger": {
+          "runFunction": "onEventUpdate"
+        }
+      }
+    }
+  }
